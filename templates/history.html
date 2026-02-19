@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction History</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>📊 Prediction History</h1>
+
+    <table class="history-table">
+        <tr>
+            <th>ID</th>
+            <th>Result</th>
+            <th>Timestamp</th>
+        </tr>
+
+        {% for row in records %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>
+                {% if 'Phishing' in row[1] %}
+                    <span class="danger-text">{{ row[1] }}</span>
+                {% else %}
+                    <span class="safe-text">{{ row[1] }}</span>
+                {% endif %}
+            </td>
+            <td>{{ row[2] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/">⬅ Back to Home</a>
+</div>
+
+</body>
+</html>

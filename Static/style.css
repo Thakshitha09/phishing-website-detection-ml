@@ -1,0 +1,155 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: #0f172a;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+h1 {
+    color: #38bdf8;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #94a3b8;
+    margin-bottom: 30px;
+}
+
+.form-box {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.form-box input {
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+button {
+    grid-column: span 3;
+    padding: 12px;
+    background: #38bdf8;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0ea5e9;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.safe {
+    background: #16a34a;
+}
+
+.danger {
+    background: #dc2626;
+}
+
+.history-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.history-table th, .history-table td {
+    border: 1px solid #334155;
+    padding: 10px;
+}
+
+.history-table th {
+    background: #1e293b;
+}
+
+.safe-text {
+    color: #22c55e;
+    font-weight: bold;
+}
+
+.danger-text {
+    color: #ef4444;
+    font-weight: bold;
+}
+
+.history-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #6366f1;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.history-btn:hover {
+    background: #4f46e5;
+}
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.card h2 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.total {
+    background: #1e293b;
+}
+
+.legit {
+    background: #16a34a;
+}
+
+.phishing {
+    background: #dc2626;
+}
+
+.percentage {
+    background: #6366f1;
+}
+
+.chart-container {
+    margin-top: 40px;
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 10px;
+}
